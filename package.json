@@ -1,0 +1,17 @@
+{
+  "name": "mongochatv3",
+  "version": "1.0.0",
+  "description": "mongoDB chat api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Jasper Huizing",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.7",
+    "socket.io": "^2.1.1"
+  }
+}
