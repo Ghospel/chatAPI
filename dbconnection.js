@@ -1,8 +1,8 @@
+require('dotenv').config();
 const mongoose = require("mongoose");
-const conString = "mongodb://test:YLn4YG543GbrTn6@ds145923.mlab.com:45923/huizingdb";
 
 function Connect(){
-    mongoose.connect(conString, {useNewUrlParser: true}, (err) => {
+    mongoose.connect(process.env.DB, {useNewUrlParser: true}, (err) => {
     if(err){
             throw(err);
         }
